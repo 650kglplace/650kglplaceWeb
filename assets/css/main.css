@@ -1887,6 +1887,11 @@ section {
   height: 100%;
   border-radius: 10px;
   overflow: hidden;
+  font-size: 20px;
+}
+.recent-posts article p {
+  
+  font-size: 20px;
 }
 
 .recent-posts .post-img {
@@ -2356,18 +2361,51 @@ section {
 --------------------------------------------------------------*/
 /* Blog Section - Blog Page
 ------------------------------*/
-.blog .posts-list article {
+
+.h-blog  article {
   box-shadow: 0 4px 16px rgba(var(--default-color-rgb), 0.1);
   padding: 30px;
   height: 100%;
   border-radius: 10px;
   overflow: hidden;
+  font-size: 25px;
+  text-align: left;
+  background-color: #fefefe;
+  /* box-shadow: ; */
 }
+
+
+.h-blog .title {
+ 
+  text-align: left;
+  background-color: #fefefe;
+  font-size: 17px;
+  font-weight: lighter;
+  /* box-shadow: ; */
+}
+
+.blog .posts-list article {
+  /* box-shadow: 0 4px 16px rgba(var(--default-color-rgb), 0.1); */
+  padding: 20px;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.blog .posts-list .b {
+ /* background-color: #f1faf6; */
+ box-shadow: 0 4px 16px rgba(var(--default-color-rgb), 0.1);
+}
+
+
 
 .blog .posts-list .post-img {
   max-height: 240px;
   margin: -30px -30px 15px -30px;
   overflow: hidden;
+  height: 5cm;
 }
 
 .blog .posts-list .post-category {
@@ -2378,9 +2416,11 @@ section {
 
 .blog .posts-list .title {
   font-size: 22px;
-  font-weight: 700;
-  padding: 0;
+  font-weight:300;
+ padding: 0;
   margin: 0 0 20px 0;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
 }
 
 .blog .posts-list .title a {
@@ -2896,4 +2936,54 @@ section {
 .blog-details .comments .reply-form .btn-primary:hover {
   color: var(--contrast-color);
   background-color: rgba(var(--primary-color-rgb), 0.8);
+}
+
+.blog .posts-list .post-img {
+  max-height: 240px;
+  margin: -30px -30px 15px -30px;
+  overflow: hidden;
+  height: 5cm;
+}
+
+@media (max-width: 768px) {
+  .blog .posts-list .imagex {
+    display: none;
+  }
+  .listing{
+    margin-top: 10px;
+  }
+  .bookingx {
+    background-image: url('../img/ft1.png');
+    /* display: none; */
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 0cm;
+    border-radius: 10px;
+  }
+}
+
+.page-title{
+  background-image: url('../img/og.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.bookingx {
+  background-image: url('../img/ft1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 1cm;
+  border-radius: 10px;
+}
+.mainfooter{
+  background-image: url('../img/foot.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: -10px;
+
 }

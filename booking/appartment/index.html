@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Appartment</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playball&display=swap" rel="stylesheet">
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        <link href="../assets/css/main.css" rel="stylesheet">
+
+        <link href="../../assets/css/main.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    </head>
+
+    <body>
+
+     <!-- ======= Header ======= -->
+  <header id="header" class="header sticky-top d-flex align-items-center" style="background-color: white;">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+     
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0" style="height: auto;">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <img src="../assets/img/logo.png" alt="">
+        <span></span>
+        <!-- style="height: 4cm;width: 3cm -->
+      </a>
+
+      <!-- Nav Menu -->
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="./../../index.html" class="active" style="color: black;font-weight: bold;">Home</a></li>
+          <li><a href="./../../about.html" style="color: black;font-weight: bold;">About us</a></li>
+          <li><a href="../index.html" style="color: black;font-weight: bold;">booking</a></li>
+          <li><a href="./../../blog.html" style="color: black;font-weight: bold;">Blog</a></li>
+          <li><a href="./../../index.html#Spaces" style="color: black;font-weight: bold;">Spaces</a></li>
+          <li><a href="./../../index.html#Explore" style="color: black;font-weight: bold;">Explore</a></li>
+          
+        </ul>
+
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav><!-- End Nav Menu -->
+
+      <a class="btn-getstarted" href="../index.html">Book now</a>
+
+    </div>
+  </header><!-- End Header -->
+
+
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control bg-transparent p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+
+        <!-- Hero Start -->
+        <div class="container-fluid bg-light py-6 my-6 mt-0">
+            <div class="container">
+              <div class="row g-5 align-items-center">
+                <div class="col-lg-7 col-md-12">
+                  <h3 class="display-1 mb-4 animated bounceInDown" style="font-size: 50px;">Book this <span class="text-primary">Apartment</span> now to fulfill your dreams</h3>
+                  <a href="#" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animated bounceInLeft" data-toggle="modal" data-target="#bookingModal">Book Now</a>
+                  <a href="#" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 animated bounceInLeft">Know More</a>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                  <img src="./img/Clutter-amico.png" class="img-fluid rounded animated zoomIn" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- Hero End -->
+
+
+
+        <!-- Booking Modal -->
+<div class="modal fade" id="bookingModal" tabindex="-1" role="dialog" aria-labelledby="bookingModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bookingModalLabel">Book this Apartment</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Booking form -->
+          <form>
+            <div class="form-group">
+              <label for="checkIn">Check-In Date</label>
+              <input type="date" class="form-control" id="checkIn">
+            </div>
+            <div class="form-group">
+              <label for="checkOut">Check-Out Date</label>
+              <input type="date" class="form-control" id="checkOut">
+            </div>
+            <div class="form-group">
+                <label for="adults">Adults (Age 13+)</label>
+                <div class="input-group">
+                  <button type="button" class="btn btn-outline-secondary" onclick="decrement('adults')">-</button>
+                  <input type="text" class="form-control text-center" id="adults" value="1" readonly>
+                  <button type="button" class="btn btn-outline-secondary" onclick="increment('adults')">+</button>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="children">Children (Ages 2–12)</label>
+                <div class="input-group">
+                  <button type="button" class="btn btn-outline-secondary" onclick="decrement('children')">-</button>
+                  <input type="text" class="form-control text-center" id="children" value="0" readonly>
+                  <button type="button" class="btn btn-outline-secondary" onclick="increment('children')">+</button>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="infants">Infants (Under 2)</label>
+                <div class="input-group">
+                  <button type="button" class="btn btn-outline-secondary" onclick="decrement('infants')">-</button>
+                  <input type="text" class="form-control text-center" id="infants" value="0" readonly>
+                  <button type="button" class="btn btn-outline-secondary" onclick="increment('infants')">+</button>
+                </div>
+              </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Reserve</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function increment(target) {
+      var input = document.getElementById(target);
+      var value = parseInt(input.value, 10);
+      input.value = value + 1;
+    }
+  
+    function decrement(target) {
+      var input = document.getElementById(target);
+      var value = parseInt(input.value, 10);
+      if (value > 0) {
+        input.value = value - 1;
+      }
+    }
+  </script>
+
+
+  
+    
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- 16:9 aspect ratio -->
+                        <div class="ratio ratio-16x9">
+                            <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                                allow="autoplay"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fact End -->
+
+
+        <!-- Events Start -->
+        <div class="container-fluid event py-6">
+            <div class="container">
+                <!-- <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+                    <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Latest Events</small>
+                    <h1 class="display-5 mb-5">Our Social & Professional Events Gallery</h1>
+                </div> -->
+                <div class="tab-class text-center">
+                 
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="./650pic/20231130_073428.jpg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <!-- <h4 class="me-auto">Wedding</h4> -->
+                                                    <a href="./650pic/20231130_073428.jpg" data-lightbox="event-1" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.3s">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="./650pic/20231130_073709.jpg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <!-- <h4 class="me-auto">Corporate</h4> -->
+                                                    <a href="./650pic/20231130_073709.jpg" data-lightbox="event-2" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.5s">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="./650pic/868A1461.JPG" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <!-- <h4 class="me-auto">Wedding</h4> -->
+                                                    <a href="./650pic/868A1461.JPG" data-lightbox="event-3" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.7s">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="./650pic/868A1464.JPG" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <!-- <h4 class="me-auto">Buffet</h4> -->
+                                                    <a href="./650pic/868A1464.JPG" data-lightbox="event-4" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="./650pic/868A1465.JPG" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <!-- <h4 class="me-auto">Cocktail</h4> -->
+                                                    <a href="./650pic/868A1465.JPG" data-lightbox="event-5" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.3s">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="./650pic/868A1468.JPG" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <!-- <h4 class="me-auto">Wedding</h4> -->
+                                                    <a href="./650pic/868A1468.JPG" data-lightbox="event-6" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.5s">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="./650pic/868A1471.JPG" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <!-- <h4 class="me-auto">Buffet</h4> -->
+                                                    <a href="./650pic/868A1471.JPG" data-lightbox="event-7" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.7s">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="./650pic/868A1471.JPG" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <!-- <h4 class="me-auto">Corporate</h4> -->
+                                                    <a href="./650pic/868A1471.JPG" data-lightbox="event-17" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-md-6 col-lg-3">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="img/event-1.jpg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <h4 class="me-auto">Wedding</h4>
+                                                    <a href="img/01.jpg" data-lightbox="event-8" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="img/event-2.jpg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <h4 class="me-auto">Wedding</h4>
+                                                    <a href="img/01.jpg" data-lightbox="event-9" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-md-6 col-lg-3">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="img/event-3.jpg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <h4 class="me-auto">Corporate</h4>
+                                                    <a href="img/01.jpg" data-lightbox="event-10" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="img/event-4.jpg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <h4 class="me-auto">Corporate</h4>
+                                                    <a href="img/01.jpg" data-lightbox="event-11" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-4" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-md-6 col-lg-3">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="img/event-5.jpg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <h4 class="me-auto">Cocktail</h4>
+                                                    <a href="img/01.jpg" data-lightbox="event-12" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="img/event-6.jpg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <h4 class="me-auto">Cocktail</h4>
+                                                    <a href="img/01.jpg" data-lightbox="event-13" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-5" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-md-6 col-lg-3">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="img/event-7.jpg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <h4 class="me-auto">Buffet</h4>
+                                                    <a href="img/01.jpg" data-lightbox="event-14" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="img/event-8.jpg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <h4 class="me-auto">Buffet</h4>
+                                                    <a href="img/01.jpg" data-lightbox="event-15" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+              <!-- Hero Start -->
+              <div class="container-fluid bg-light py-6 my-6 mt-0">
+                <div class="container" style="border: 0px;">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-7 col-md-12" >
+                            <div class="container mt-5" style="border: 0px; background-color: rgb(255, 255, 255); padding: 30px; border-radius: 10px;">
+                                <h2>Apartment Facilities</h2>
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <ul class="list-group" style="border: 0px; background-color: aquamarine;">
+                                      <li class="list-group-item">
+                                        <i class="fas fa-bed"></i> Bed
+                                      </li>
+                                      <li class="list-group-item">
+                                        <i class="fas fa-couch"></i> Sofa
+                                      </li>
+                                      <li class="list-group-item">
+                                        <i class="fas fa-bath"></i> Bathroom
+                                      </li>
+                                      <li class="list-group-item">
+                                        <i class="fas fa-utensils"></i> Kitchen
+                                      </li>
+                                      <li class="list-group-item">
+                                        <i class="fas fa-gym"></i> Gym
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="col-md-6 listing">
+                                    <ul class="list-group" style="border: 0px; background-color: aquamarine;">
+                                      <li class="list-group-item">
+                                        <i class="fas fa-tv"></i> TV
+                                      </li>
+                                      <li class="list-group-item">
+                                        <i class="fas fa-wifi"></i> Wi-Fi
+                                      </li>
+                                      <li class="list-group-item">
+                                        <i class="fas fa-car"></i> Parking
+                                      </li>
+                                      <li class="list-group-item">
+                                        <i class="fas fa-swimming-pool"></i> Swimming Pool
+                                      </li>
+                                    
+                                      <li class="list-group-item">
+                                        <i class="fas fa-washer"></i> Washer
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-lg-5 col-md-12">
+                            <img src="../../assets/img/Early morning-bro.png" class="img-fluid rounded animated zoomIn" alt="">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container" style="border: 0px;">
+                    <div class="row g-5 align-items-center">
+                      <div class="col-lg-7 col-md-12">
+                        <div class="container mt-5" style="border: 0px; background-color: rgb(255, 255, 255); padding: 30px; border-radius: 10px;">
+                          <h2>Geographical Map</h2>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <!-- Embed Google Map -->
+                              <iframe
+                                width="100%"
+                                height="400"
+                                frameborder="0"
+                                scrolling="no"
+                                marginheight="0"
+                                marginwidth="0"
+                                src="https://maps.google.com/maps?q=650kglplace&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                              ></iframe>
+                              <!-- <div class="mapouter"><div class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=650kglplace&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" style="width: 430px; height: 400px;"></iframe><style>.mapouter{position:relative;height:400px;width:430px;background:#fff;} .maprouter a{color:#fff !important;position:absolute !important;top:0 !important;z-index:0 !important;}</style><a href="https://blooketjoin.org/blooket-host/">blooket host</a><style>.gmap_canvas{overflow:hidden;height:400px;width:430px}.gmap_canvas iframe{position:relative;z-index:2}</style></div></div> -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-5 col-md-12">
+                        <div class="container mt-5" style="border: 0px; background-color: rgb(255, 255, 255); padding: 30px; border-radius: 10px;">
+                          <h2>Contact Us</h2>
+                          <form>
+                            <div class="form-group">
+                              <label for="name">Your Name</label>
+                              <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                            </div>
+                            <div class="form-group">
+                              <label for="email">Email address</label>
+                              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                            </div>
+                            <div class="form-group">
+                              <label for="message">Message</label>
+                              <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            
+
+
+               <!-- Hero Start -->
+              
+
+               <footer id="footer" class="footer">
+
+                <div class="container footer-top" style="margin-top: -3cm;">
+                  <div class="row gy-4">
+                    <div class="col-lg-5 col-md-12 footer-about">
+                      <a href="index.html" class="logo d-flex align-items-center" style="padding-top: 1cm;padding-top: 20px;">
+                        <span>650 KGL PLACE </span>
+                      </a>
+                      <p style="padding-top: 1cm;padding-top: 20px;">Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+                      <div class="social-links d-flex mt-4">
+                        <a href=""><i class="bi bi-twitter"></i></a>
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-linkedin"></i></a>
+                      </div>
+                    </div>
+            
+                    <div class="col-lg-2 col-6 footer-links">
+                      <h4>Useful Links</h4>
+                      <ul>
+                        <li><a href="index.html" class="active" style="color: black;">Home</a></li>
+                        <li><a href="about.html" style="color: black;">About us</a></li>
+                        <li><a href="./booking/index.html" style="color: rgb(50, 44, 44);">booking</a></li>
+                        <li><a href="blog.html" style="color: black;">Blog</a></li>
+                        <li><a href="index.html#Spaces" style="color: black;">Spaces</a></li>
+            
+                      </ul>
+                    </div>
+            
+                    <div class="col-lg-2 col-6 footer-links">
+                      <h4>Our Services</h4>
+                      <ul>
+                        <li><a href="#">Book now</a></li>
+                        <li><a href="#">Explore more</a></li>
+                        <li><a href="#">view Gallery</a></li>
+                        <li><a href="#">visit us</a></li>
+                        <li><a href="#">Go home</a></li>
+                      </ul>
+                    </div>
+            
+                    <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+                      <h4>Contact Us</h4>
+                      <p>A108 Adam gikondo</p>
+                      <p>New Park, NY 535022</p>
+                      <p>Kigali Rwanda</p>
+                      <p class="mt-4"><strong>Phone:</strong> <span>+250 798697081</span></p>
+                      <p><strong>Email:</strong> <span>booking@650kigaliplace.com</span></p>
+                    </div>
+            
+                  </div>
+                </div>
+            
+                <div class="container copyright text-center mt-4 bookingx" style="padding: 1.3cm;">
+                  <p>&copy; <span>Copyright</span> <strong class="px-1">650kglplace</strong> <span>All Rights Reserved</span></p>
+                  <div class="credits">
+                    Designed by <a target="_blank" href="https://diolichat.com/" style="color: brown;">diolichat team </a>
+                  </div>
+                </div>
+            
+              </footer><!-- End Footer -->
+
+        <!-- Footer End -->
+        <!-- Events End -->
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-md-square btn-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>

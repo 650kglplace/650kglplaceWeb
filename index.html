@@ -24,6 +24,14 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <!-- Add this line in the <head> section of your HTML file -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-lZ9JzVNCaWEh3yKRxusf5ME2JDw73b8+Zz5Tj9Q3gl6s7D/lnHTt8A6zYT5EPkU" crossorigin="anonymous">
+<link rel="icon" href="assets/img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+<!-- Include Font Awesome link only once -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-lZ9JzVNCaWEh3yKRxusf5ME2JDw73b8+Zz5Tj9Q3gl6s7D/lnHTt8A6zYT5EPkU" crossorigin="anonymous">
+
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -33,6 +41,9 @@
     background-color: rgb(231, 225, 225);
   }
   .navmenu  li{
+    color: black;
+  }
+  p{
     color: black;
   }
 
@@ -55,21 +66,21 @@
 
       <!-- Nav Menu -->
       <nav id="navmenu" class="navmenu">
-        <ul style="">
-          <li><a href="index.html#hero" class="active" style="color: black;font-weight: bold;">Home</a></li>
+        <ul>
+          <li><a href="index.html" class="active" style="color: black;font-weight: bold;">Home</a></li>
           <li><a href="about.html" style="color: black;font-weight: bold;">About us</a></li>
-          <li><a href="index.html#booking" style="color: black;font-weight: bold;">booking</a></li>
-          <li><a href="index.html#Blog" style="color: black;font-weight: bold;">Blog</a></li>
+          <li><a href="./booking/index.html" style="color: black;font-weight: bold;">booking</a></li>
+          <li><a href="blog.html" style="color: black;font-weight: bold;">Blog</a></li>
           <li><a href="index.html#Spaces" style="color: black;font-weight: bold;">Spaces</a></li>
           <li><a href="index.html#Explore" style="color: black;font-weight: bold;">Explore</a></li>
-          </li>
+          
          
         </ul>
 
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav><!-- End Nav Menu -->
 
-      <a class="btn-getstarted" href="index.html#about">Booking soon</a>
+      <a class="btn-getstarted" href="./booking/index.html">Booking now</a>
 
     </div>
   </header><!-- End Header -->
@@ -94,21 +105,6 @@
             
           </div>
         </div>
-        <!-- ======= Footer ======= -->
-  <!-- ======= Footer ======= -->
-
-    <!-- ======= Header ======= -->
-  <!-- Your header code here -->
-
-
-  <!-- ======= Footer ======= -->
-  <!-- <footer id="footer" class="footer" style="justify-content: end;">
-    <div class="container text-center">
-      <p style="color: black;">&copy; 2023 Your Website Name. All rights reserved.</p>
-    </div>
-  </footer>End Footer -->
-
-
 
 
       </div>
@@ -124,16 +120,32 @@
 
       <!-- <div class="container-fluid" data-aos="fade-up"> -->
 
-        <div class="row" >
-         <div class="col-md-3"></div>
-         <div class="col-md-3"><p style="text-align: center;color: black;opacity: 0.9;"><i>+250 798697081</i></p></div>
-         <div class="col-md-3"><p style="text-align: center;"> <i>booking@650kigaliplace.com</i></p></div>
-         <!-- <div class="col-md-3"><p style="text-align: center;"></p>booking@650kigaliplace.com</p></div> -->
-         <div class="col-md-3"></div>
-         
-        <!-- </div> -->
-
-      </div>
+        <div class="row mainfooter">
+          <div class="col-6 col-sm-3">
+            <p style="text-align: center;color: black;opacity: 0.9;padding: 10px;">
+              <b><i class="fab fa-whatsapp"></i> <a href="tel:+250798697081" style="color: black;">+250 798697081</a></b>
+            </p>
+          </div>
+          <div class="col-6 col-sm-3">
+            <p style="text-align: center;color: black;opacity: 0.9;padding: 10px;">
+              <b><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/650.kgl.place/" style="color: black;">@650.kgl.place</a></b>
+            </p>
+          </div>
+          <div class="col-6 col-sm-3">
+            <p style="text-align: center;color: black;opacity: 0.9;padding: 10px;">
+              <b><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/650kglplace/" style="color: black;">@650kglplace</a></b>
+            </p>
+          </div>
+          <div class="col-6 col-sm-3">
+            <p style="text-align: center;padding: 10px;">
+              <b><i class="far fa-envelope"></i> <a href="mailto:booking@650kigaliplace.com" style="color: black;">booking@650kigaliplace.com</a></b>
+            </p>
+          </div>
+        </div>
+        
+        
+        
+        
 
     </section><!-- End Clients Section -->
 
